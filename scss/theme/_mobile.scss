@@ -10,8 +10,8 @@
 
 .mobile-logo {
   svg, img {
-    height: 42px;
-    margin-top: .7rem;
+    height: 30px;
+    margin-top: 1.175rem;
     margin-left: 1.4rem;
 
     path {
@@ -124,6 +124,16 @@
 
   & > .tree {
     text-align: left;
+    li {
+      padding: 20px 0;
+      overflow: hidden;
+      a {
+        display: block;
+        margin: -10em;
+        padding: 10em;
+        font-size: large;
+      }
+    }
   }
 }
 

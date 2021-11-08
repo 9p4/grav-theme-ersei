@@ -1,12 +1,39 @@
-// Spectre Overrides
-$primary-color: #3085EE !default;
-$dark-color: #454d5d !default;
-$light-color: #fff !default;
-$gray-color: lighten($dark-color, 40%) !default;
-$gray-color-dark: darken($gray-color, 25%) !default;
-$border-color: lighten($dark-color, 60%) !default;
-$bg-color: lighten($dark-color, 66%) !default;
-$body-font-color: lighten($dark-color, 5%) !default;
+// Core colors
+$primary-color: #308dff !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+
+// Gray colors
+$dark-color: #070512 !default;
+$light-color: #eee !default;
+$gray-color: #acb3c2 !default;
+$gray-color-dark: darken($gray-color, 30%) !default;
+$gray-color-light: lighten($gray-color, 20%) !default;
+
+$border-color: lighten($dark-color, 65%) !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+$bg-color: #070512 !default;
+$bg-color-dark: darken($bg-color, 3%) !default;
+$bg-color-light: $light-color !default;
+
+// Control colors
+$success-color: #32b643 !default;
+$warning-color: #ffb700 !default;
+$error-color: #e85600 !default;
+
+// Other colors
+$code-color: $light-color !default;
+$code-bg: #135 !default;
+$highlight-color: #ff3 !default;
+$body-bg: $bg-color-dark !default;
+$body-font-color: #eee !default;
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 10%) !default;
+$link-color-light: lighten($link-color, 10%) !default;
 
 // Layout
 $horiz-padding: 1rem;

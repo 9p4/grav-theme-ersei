@@ -71,11 +71,11 @@ img {
 
 // Codeblocks
 pre code, pre.xdebug-var-dump{
-  background: #fafafa;
+  background: $code-bg;
   display: block;
   padding: 1rem !important;
   line-height: 1.5;
-  color: inherit;
+  color: $code-color;
   border-radius: 2px;
   overflow-x: auto;
 }
@@ -90,7 +90,7 @@ pre[class*="language-"] {
 
 pre {
   code:not(.hljs):not([class*="language-"]) {
-    background: #f8f8f8;
+    background: $code-bg;
   }
 }
 

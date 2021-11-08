@@ -10,12 +10,12 @@
 
 // Elements
 @import "spectre/typography";
-@import "spectre/asian";
+//@import "spectre/asian";
 @import "spectre/tables";
 @import "spectre/buttons";
 @import "spectre/forms";
 @import "spectre/labels";
-@import "spectre/codes";
+//@import "spectre/codes";
 @import "spectre/media";
 
 // Layout
@@ -24,11 +24,11 @@
 @import "spectre/navbar";
 
 // Components
-@import "spectre/accordions";
-@import "spectre/avatars";
-@import "spectre/badges";
-@import "spectre/breadcrumbs";
-@import "spectre/bars";
+//@import "spectre/accordions";
+//@import "spectre/avatars";
+//@import "spectre/badges";
+//@import "spectre/breadcrumbs";
+//@import "spectre/bars";
 @import "spectre/cards";
 @import "spectre/chips";
 @import "spectre/dropdowns";
@@ -37,12 +37,12 @@
 @import "spectre/modals";
 @import "spectre/navs";
 @import "spectre/pagination";
-@import "spectre/panels";
-@import "spectre/popovers";
-@import "spectre/steps";
+//@import "spectre/panels";
+//@import "spectre/popovers";
+//@import "spectre/steps";
 @import "spectre/tabs";
 @import "spectre/tiles";
-@import "spectre/toasts";
+//@import "spectre/toasts";
 @import "spectre/tooltips";
 
 // Utility classes
@@ -50,4 +50,4 @@
 @import "spectre/utilities";
 
 // Extras
-@import "theme/extensions";
+//@import "theme/extensions";

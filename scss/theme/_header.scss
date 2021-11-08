@@ -7,11 +7,11 @@
   font-size: 0.7rem;
   font-weight: 700;
 
-  background: $light-color;
-  color: $dark-color;
+  background: $dark-color;
+  color: $light-color;
 
   a {
-    color: $dark-color;
+    color: $light-color;
   }
 
   .logo svg path {
@@ -61,7 +61,7 @@
 
   .logo {
     svg, img {
-      height: 42px;
+      height: 30px;
       display: inherit;
       @extend .default-animation;
     }
