@@ -3,6 +3,38 @@
 @import 'spectre/variables';
 @import 'spectre/mixins';
 
+@import "spectre/normalize";
+@import "spectre/base";
+
+@import "spectre/typography";
+@import "spectre/tables";
+@import "spectre/buttons";
+@import "spectre/forms";
+@import "spectre/labels";
+@import "spectre/media";
+
+// Layout
+@import "spectre/layout";
+@import "spectre/hero";
+@import "spectre/navbar";
+
+// Components
+@import "spectre/cards";
+@import "spectre/chips";
+@import "spectre/dropdowns";
+@import "spectre/empty";
+@import "spectre/menus";
+@import "spectre/modals";
+@import "spectre/navs";
+@import "spectre/pagination";
+@import "spectre/tabs";
+@import "spectre/tiles";
+@import "spectre/tooltips";
+
+// Utility classes
+@import "spectre/animations";
+@import "spectre/utilities";
+
 @import 'theme/fonts';
 @import 'theme/mixins';
 @import 'theme/framework';
@@ -19,4 +51,3 @@
 // Extra Skeleton Styling
 @import 'theme/blog';
 @import 'theme/onepage';
-
