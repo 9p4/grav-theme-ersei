@@ -1,0 +1,263 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#body-wrapper {
+	background-color: #070512;
+	color: white;
+}
+
+body {
+	background-color: #000;
+}
+
+.card {
+	background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+#header {
+	background-color: #000000;
+}
+
+#header a {
+	color: white;
+	background-color: #000000;
+}
+
+#header .navbar-section {
+	padding-right: 25px;
+}
+
+.label.label-primary {
+	color: white;
+	background-color: #126bd9;
+}
+
+.label.label-secondary {
+	color: white;
+	background-color: #323232;
+}
+
+#footer {
+	background-color: #000000 !important;
+}
+
+#navbar-brand {
+        stroke: #ffffff;
+        fill: #ffffff;
+}
+
+pre code {
+	background: #135 !important;
+}
+
+code {
+        background-color: #135 !important;
+	color: #fff;
+}
+
+.hero {
+	background-color: #000;
+}
+
+.hero h1 {
+	color: #fff;
+}
+
+#grav-login {
+	background: #111;
+}
+
+.search-input {
+	color: #fff
+	background: #111
+}
+
+.tags p {
+  margin-bottom: 0px;
+}
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.badge-container > div {
+  background-color: #fff;
+  width: 100px;
+  margin: 10px;
+}
+
+.tree li {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.tree li a {
+	font-size: large;
+}
+
+.overlay-menu .tree li a {
+  display: block;
+  margin: -10em;
+  padding: 10em;
+}
+
+#header .logo img, #header .logo svg, .mobile-logo img, .mobile-logo svg {
+  height: 30px;
+}
+
+.mobile-logo img, .mobile-logo svg {
+  margin-top: 1.175rem
+}
+
+.icon-inline {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: inherit;
+  color: inherit;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.icon-pulse {
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8);
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+}
+
+.bricklayer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.bricklayer-column-sizer {
+    width: 100%;
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .bricklayer-column-sizer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .bricklayer-column-sizer {
+        width: 50%;
+    }
+}
+
+/*@media screen and (min-width: 1200px) {*/
+    /*.bricklayer-column-sizer {*/
+        /*width: 33.33333%;*/
+    /*}*/
+/*}*/
+
+.bricklayer-column {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tntsearch-form .form-input {
+    height: 2.4rem;
+    padding-left: 1rem;
+}
+
+#tntsearch-wrapper {
+    position: relative;
+}
+
+.tntsearch-clear {
+    border-radius: 100%;
+    padding: 0 1rem;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    top: 0;
+    cursor: pointer;
+}
+
+.tntsearch-field-inpage {
+    width: 100%;
+}
+
+.tntsearch-dropdown ~ .tntsearch-results {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.tntsearch-dropdown ~ .tntsearch-results .row {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.1);
+    padding: 10px;
+    z-index: 2;
+}
+
+.tntsearch-results .info {
+    color: #999;
+    font-size: 90%;
+}
+
+.tntsearch-results .title {
+    margin-bottom: 10px;
+}
+
+.tntsearch-results .route {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tntsearch-results .row > p {
+    margin-top: 0;
+}
+
+.tntsearch-results em {
+    font-style: normal;
+    background-color: #ffff33;
+    color: #000;
+}
+
+.tntsearch-powered-by {
+    text-align: center;
+    font-size: 14px;
+}
+
+.tntsearch-dropdown ~ .tntsearch-powered-by {
+    display: none;
+}

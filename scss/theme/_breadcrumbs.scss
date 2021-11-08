@@ -1,0 +1,20 @@
+/** Breadcrumbs styling **/
+#breadcrumbs {
+  padding-left: 0;
+  height: 2rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+
+  i {
+    &:not(:first-child)::before {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+
+      color: $gray-color-light;
+      content: "/";
+    }
+  }
+}

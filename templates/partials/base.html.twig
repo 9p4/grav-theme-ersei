@@ -13,22 +13,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url('theme://images/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url('theme://images/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url('theme://images/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('theme://images/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url('theme://images/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url('theme://images/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url('theme://images/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url('theme://images/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('theme://images/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url('theme://images/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('theme://images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url('theme://images/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('theme://images/favicon/favicon-16x16.png') }}">
+    <link rel="icon" href="{{ url('theme://images/favicon/favicon.svg') }}">
+    <link rel="mask-icon" href="{{ url('theme://images/favicon/favicon-mask.svg') }}" color="#000000">
+    <link rel="manifest" href="{{ url('theme://images/favicon/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="{{ url('theme://images/favicon/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#000000">
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 {% endblock head %}
 
 {% block stylesheets %}
     {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
-    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
-    {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
     {% do assets.addCss('theme://css-compiled/theme'~compress) %}
-    {% do assets.addCss('theme://css/custom.css') %}
-    {% do assets.addCss('theme://css/line-awesome.min.css') %}
+    {% do assets.addCss('theme://css/style.css') %}
 {% endblock %}
 
 {% block javascripts %}
-    {% do assets.addJs('jquery', 101) %}
-    {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
 {% endblock %}
 
@@ -57,6 +70,11 @@
                         {% if config.plugins.login.enabled and grav.user.username %}
                             <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
                         {% endif %}
+
+                        {% if config.plugins.tntsearch.enabled %}
+                            <a href="/search"><svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg></a>
+                        {% endif %}
+
 
                     </section>
                 </nav>
@@ -100,6 +118,9 @@
             </div>
             <nav class="overlay-menu">
                 {% include 'partials/navigation.html.twig' with {tree: true} %}
+                {% if config.plugins.tntsearch.enabled %}
+                  <a class="button" href="/search"><svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg> Search</a>
+                {% endif %}
             </nav>
         </div>
     </div>

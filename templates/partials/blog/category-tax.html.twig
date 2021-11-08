@@ -1,0 +1,9 @@
+{% if page.taxonomy.category %}
+<span class="tags">
+    <p>Category:&nbsp;
+    {% for tag in page.taxonomy.category %}
+    <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="{{ blog.url|rtrim('/') }}/category{{ config.system.param_sep }}{{ tag }}#body-wrapper">{{ tag }}</a>
+    {% endfor %}
+    </p>
+</span>
+{% endif %}

@@ -1,5 +1,5 @@
 en:
-  THEME_QUARK:
+  THEME_ERSEI:
     ADMIN:
       GRID_SIZE: Grid size
     BLOG:
@@ -17,6 +17,8 @@ en:
         FEELING_LUCKY: I'm Feeling Lucky!
       SOME_TEXT_WIDGET:
         HEADLINE: Some Text Widget
+      CATEGORIES:
+        HEADLINE: Categories
       POPULAR_TAGS:
         HEADLINE: Popular Tags
       ARCHIVES:
@@ -25,7 +27,7 @@ en:
         HEADLINE: Syndicate
 
 de:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Weiterlesen...
@@ -49,7 +51,7 @@ de:
         HEADLINE: Abonnements
 
 es:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Continuar leyendo...
@@ -73,8 +75,8 @@ es:
         HEADLINE: Distribuir
 
 fr:
-  THEME_QUARK:
-    TRANSLATION_TEST: Quark !
+  THEME_ERSEI:
+    TRANSLATION_TEST: Ersei !
     BLOG:
       ITEM:
         CONTINUE_READING: Continuer la lecture...
@@ -98,7 +100,7 @@ fr:
         HEADLINE: Syndication
 
 it:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Continua a leggere...
@@ -122,7 +124,7 @@ it:
         HEADLINE: Feed
 
 ro:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
      ITEM:
         CONTINUE_READING: Mai multe...
@@ -146,7 +148,7 @@ ro:
         HEADLINE: Abonați-vă
 
 ru:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Читать далее...
@@ -170,7 +172,7 @@ ru:
         HEADLINE: Синдикация
 
 uk:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Читати далі...
@@ -194,7 +196,7 @@ uk:
         HEADLINE: Синдикація
 
 hr:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Nastavi s čitanjem...
@@ -218,7 +220,7 @@ hr:
         HEADLINE: Kanali
 
 nl:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Lees Meer...
@@ -242,7 +244,7 @@ nl:
         HEADLINE: Syndicatie
 
 cs:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: Pokračovat ve čtení...
@@ -266,7 +268,7 @@ cs:
         HEADLINE: Syndikace
 
 zh:
-  THEME_QUARK:
+  THEME_ERSEI:
     BLOG:
       ITEM:
         CONTINUE_READING: 继续阅读...

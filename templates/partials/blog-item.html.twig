@@ -7,6 +7,8 @@
         <h3 >{{ page.header.subtitle }}</h3>
         {% endif %}
         {% include 'partials/blog/date.html.twig' %}
+        <br>
+        {% include 'partials/blog/category-tax.html.twig' %}
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
@@ -21,10 +23,10 @@
 
 <p class="prev-next text-center">
     {% if not page.isLast %}
-            <a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> {{ 'THEME_QUARK.BLOG.ITEM.PREV_POST'|t }}</a>
+            <a class="btn" href="{{ page.prevSibling.url }}"><svg class="icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 19.03125 4.28125 L 8.03125 15.28125 L 7.34375 16 L 8.03125 16.71875 L 19.03125 27.71875 L 20.46875 26.28125 L 10.1875 16 L 20.46875 5.71875 Z"/></svg> {{ 'THEME_ERSEI.BLOG.ITEM.PREV_POST'|t }}</a>
     {% endif %}
 
     {% if not page.isFirst %}
-        <a class="btn" href="{{ page.nextSibling.url }}">{{ 'THEME_QUARK.BLOG.ITEM.NEXT_POST'|t }} <i class="fa fa-angle-right"></i></a>
+        <a class="btn" href="{{ page.nextSibling.url }}">{{ 'THEME_ERSEI.BLOG.ITEM.NEXT_POST'|t }} <svg class="icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"/></svg></a>
     {% endif %}
 </p>

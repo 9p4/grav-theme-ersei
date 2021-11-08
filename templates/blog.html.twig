@@ -7,14 +7,11 @@
 {% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
 
 {% block stylesheets %}
-    {% do assets.addCss('theme://css/bricklayer.css') %}
     {{ parent() }}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    {% do assets.add('theme://js/bricklayer.min.js') %}
-    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
 {% endblock %}
 
 
@@ -53,10 +50,6 @@
         {% endembed %}
         </section>
     </section>
-    <script>
-        //Bricklayer
-        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
-    </script>
 {% endblock %}
 
 

@@ -1,17 +1,17 @@
-name: Quark
-slug: quark
+name: Ersei
+slug: ersei
 type: theme
 version: 2.0.4
-description: New Grav Default Theme
+description: Ersei's best theme, based on Quark
 icon: microchip
 author:
-  name: Team Grav
-  email: devs@getgrav.org
-  url: https://getgrav.org
-homepage: https://github.com/getgrav/grav-theme-quark
-demo: https://demo.getgrav.org/onepage-skeleton
-keywords: quark, spectre, theme, core, modern, fast, responsive, html5, css3
-bugs: https://github.com/getgrav/grav-theme-quark/issues
+  name: Ersei Saggi
+  email: samb@disroot.org
+  url: https://ersei.saggis.com
+homepage: https://ersei.saggis.com
+demo: https://ersei.saggis.com
+keywords: ersei, spectre, theme, core, modern, fast, responsive, html5, css3
+bugs: https://github.com/sambhavsaggi/ersei.saggis.com/issues
 license: MIT
 
 dependencies:
@@ -24,7 +24,7 @@ form:
     production-mode:
       type: toggle
       label: Production mode
-      help: When enabled, Quark will render with minified CSS
+      help: When enabled, Ersei will render with minified CSS
       highlight: 1
       default: 1
       options:
@@ -35,7 +35,7 @@ form:
 
     grid-size:
       type: select
-      label: THEME_QUARK.ADMIN.GRID_SIZE
+      label: THEME_ERSEI.ADMIN.GRID_SIZE
       help: The maximum width of the theme
       size: small
       options:
