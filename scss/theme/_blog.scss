@@ -53,6 +53,9 @@
 
   .card-footer {
     text-align: right;
+    p {
+      margin: 0 0;
+    }
   }
 
   .blog-date {
@@ -89,6 +92,12 @@ ul.pagination {
 
 /** Sidebar specific tweaks **/
 #sidebar {
+  .sidebar-content{
+    padding-bottom: 1.75rem;
+  }
+  h4 {
+    margin-bottom: 0.2rem;
+  }
 
   ul.related-pages {
     box-shadow: none;
@@ -112,4 +121,9 @@ ul.pagination {
       vertical-align: text-top;
     }
   }
+}
+
+// Blog taxonomy
+.tags p {
+  margin-bottom: 0;
 }

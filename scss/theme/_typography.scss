@@ -68,10 +68,14 @@ img {
   width: 100%;
 }
 
+// Code inline
+
+code {
+  background: $code-bg;
+}
 
 // Codeblocks
 pre code, pre.xdebug-var-dump{
-  background: $code-bg;
   display: block;
   padding: 1rem !important;
   line-height: 1.5;

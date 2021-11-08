@@ -1,49 +1,53 @@
 // Variables and mixins
-@import "variables";
-@import "mixins";
+@import "theme/variables";
+@import "spectre/variables";
+@import "spectre/mixins";
 
 /*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
 // Reset and dependencies
-@import "normalize";
-@import "base";
+@import "spectre/normalize";
+@import "spectre/base";
 
 // Elements
-@import "typography";
-@import "asian";
-@import "tables";
-@import "buttons";
-@import "forms";
-@import "labels";
-@import "codes";
-@import "media";
+@import "spectre/typography";
+//@import "spectre/asian";
+@import "spectre/tables";
+@import "spectre/buttons";
+@import "spectre/forms";
+//@import "spectre/labels";
+//@import "spectre/codes";
+@import "spectre/media";
 
 // Layout
-@import "layout";
-@import "hero";
-@import "navbar";
+@import "spectre/layout";
+@import "spectre/hero";
+@import "spectre/navbar";
 
 // Components
-@import "accordions";
-@import "avatars";
-@import "badges";
-@import "breadcrumbs";
-@import "bars";
-@import "cards";
-@import "chips";
-@import "dropdowns";
-@import "empty";
-@import "menus";
-@import "modals";
-@import "navs";
-@import "pagination";
-@import "panels";
-@import "popovers";
-@import "steps";
-@import "tabs";
-@import "tiles";
-@import "toasts";
-@import "tooltips";
+//@import "spectre/accordions";
+//@import "spectre/avatars";
+//@import "spectre/badges";
+//@import "spectre/breadcrumbs";
+//@import "spectre/bars";
+@import "spectre/cards";
+@import "spectre/chips";
+@import "spectre/dropdowns";
+@import "spectre/empty";
+@import "spectre/menus";
+@import "spectre/modals";
+@import "spectre/navs";
+@import "spectre/pagination";
+//@import "spectre/panels";
+//@import "spectre/popovers";
+//@import "spectre/steps";
+@import "spectre/tabs";
+@import "spectre/tiles";
+//@import "spectre/toasts";
+@import "spectre/tooltips";
 
 // Utility classes
-@import "animations";
-@import "utilities";
+@import "spectre/animations";
+@import "spectre/utilities";
+
+// Extras
+//@import "theme/extensions";
